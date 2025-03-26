@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which Year Were You Born In?"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+    <EditText
+        android:id="@+id/yearInput"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="50dp"
+        android:textAlignment="center"
+        android:hint="Enter Year"
+        tools:ignore="HardcodedText,AutoFill" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:insetLeft="50dp"
+        android:insetRight="50dp"
+        android:text="CHECK GENERATION!"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Belong To The Following Generation:"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/genTxt"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/clrBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        tools:ignore="HardCodedText"/>
+
+    <Button
+        android:id="@+id/extBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        tools:ignore="HardCodedText"/>
+
+
+</LinearLayout>
